@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+#grid {
+    position: relative;
+    padding: 50px;
+}
+
+.grid-root {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border: deepskyblue 1px solid;
+}
+
+.grid-root .row {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.grid-root .row .column {
+    width: 50px;
+    height: 100%;
+    background-color: deepskyblue;
+    border: #ffffff 1px solid;
+}
+
+.action-btn {
+    height: 50px;
+    width: 50px;
+    background-color: #999999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    user-select: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: .3s linear;
+    border: #ffffff 1px solid;
+}
+
+.action-btn:hover {
+    opacity: 0.7;
+}
+
+.del-btn-col, .del-btn-row {
+    background-color: darkred;
+}
+
+.del-btn-col {
+    top:0;
+    display: none;
+}
+
+.del-btn-row {
+    left: 0;
+    display: none;
+}
+
+.add-btn-col, .add-btn-row {
+    background-color: orange;
+}
+.add-btn-col {
+    right: 0;
+    margin-top: 3px;
+}
+
+.add-btn-row {
+    bottom: 0;
+    margin-left: 3px;
+}

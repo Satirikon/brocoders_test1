@@ -5,12 +5,13 @@
 }
 
 body {
-    display: flex;
+    height: 100vh;
 }
 
-#grid {
+.grid {
+    padding: 52px;
     position: relative;
-    padding: 50px;
+    display: inline-block;
 }
 
 .grid-root {
@@ -38,15 +39,12 @@ body {
     width: 50px;
     background-color: #999999;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    user-select: none;
     color: #ffffff;
     font-size: 20px;
     transition: .3s linear;
     border: #ffffff 1px solid;
+    outline: none;
 }
 
 .action-btn:hover {
